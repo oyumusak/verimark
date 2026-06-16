@@ -28,6 +28,21 @@ try:
 except Exception:  # pragma: no cover
     _TORCH_OK = False
 
+    # torch kurulu degilken (klasik mod / .exe) modulun yine de import
+    # edilebilmesi gerekir. AnomalyModel govdesindeki @torch.no_grad()
+    # dekoratorleri sinif TANIMLANIRKEN (import aninda) calistigi icin,
+    # 'torch' ismi tanimli olmazsa NameError olusur ve uygulama acilista
+    # coker. Bunu onlemek icin no-op bir shim koyariz; gercek torch
+    # cagrilari yalnizca _TORCH_OK True iken yapildigindan guvenli.
+    class _TorchShim:
+        @staticmethod
+        def no_grad(*_a, **_k):
+            def _decorator(fn):
+                return fn
+            return _decorator
+
+    torch = _TorchShim()  # type: ignore
+
 
 def is_available() -> bool:
     return _TORCH_OK
