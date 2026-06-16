@@ -1,0 +1,7 @@
+# VeriMark .exe paketleme bagimliliklari (KLASIK mod, torch yok).
+# Windows .exe'si bu listeyle uretilir; torch/torchvision bilerek yok.
+opencv-python>=4.8.0
+numpy>=1.24.0
+scikit-image>=0.21.0
+PyQt6>=6.5.0
+pyinstaller>=6.6.0

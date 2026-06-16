@@ -1,0 +1,13 @@
+# Cekirdek (her zaman gerekli)
+opencv-python>=4.8.0
+numpy>=1.24.0
+scikit-image>=0.21.0
+PyQt6>=6.5.0
+
+# Derin anomali (GPU) modu icin gerekli.
+# CUDA'li surum icin (NVIDIA GPU):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# Yalnizca CPU icin:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2.0
+torchvision>=0.17.0

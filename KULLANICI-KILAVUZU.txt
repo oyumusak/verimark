@@ -1,0 +1,63 @@
+==========================================================
+  VeriMark — Baski/Logo Kalite Denetim Sistemi
+  Windows Kullanim Kilavuzu (yazilim bilgisi gerekmez)
+==========================================================
+
+KURULUM YOK. Sadece "VeriMark.exe" dosyasina CIFT TIKLAYIN.
+
+----------------------------------------------------------
+1) ILK ACILISTA "Windows korudu" UYARISI CIKARSA
+----------------------------------------------------------
+   - "Daha fazla bilgi" yazisina tiklayin.
+   - Acilan "Yine de calistir" dugmesine basin.
+   Bu uyari, programin internetten cok indirilmemis olmasindan
+   kaynaklanir; zararli degildir. Sonraki acilislarda cikmaz.
+
+   (Acilis 5-15 saniye surebilir, sabredin; ilk seferde biraz
+    daha uzun olabilir.)
+
+----------------------------------------------------------
+2) TELEFONU KAMERA YAPMA
+----------------------------------------------------------
+   a) Telefona "IP Webcam" uygulamasini kurun (Android).
+   b) Telefon ile bilgisayar AYNI Wi-Fi agina bagli olsun.
+   c) Uygulamayi acin, "Sunucuyu baslat" deyin.
+   d) Ekranda yazan adresi alin: ornek  192.168.1.42
+   e) VeriMark'ta ust cubukta:
+        - Uygulama: "IP Webcam (Android) - video"
+        - Telefon IP: 192.168.1.42
+        - "Baglan" dugmesine basin.
+
+   Test icin "Webcam (yerel 0)" secip bilgisayarin kendi
+   kamerasini da kullanabilirsiniz.
+
+----------------------------------------------------------
+3) OGRETME (bir kez yapilir)
+----------------------------------------------------------
+   "Ogret (Kalibrasyon)" sekmesinde:
+   1. Kameraya baglanin.
+   2. SAGLAM bir baski goruntusunde fareyle LOGONUN uzerine
+      dikdortgen cizin.
+   3. "Saglam Numune Yakala" ile en az 5 saglam ornek toplayin.
+   4. "Referans Olustur" deyin.
+   5. Bir isim verip "Profili Kaydet" deyin.
+
+----------------------------------------------------------
+4) DENETIM
+----------------------------------------------------------
+   "Izleme / Denetim" sekmesinde:
+   - Profili yukleyin, "Otomatik denetim" kutusunu isaretleyin.
+   - Buyuk gosterge OK (yesil) / NOK (kirmizi) olur.
+   - Hatali bolgeler renkli vurgulanir.
+
+   Cok fazla NOK cikiyorsa: "Profiller / Ayarlar" sekmesinde
+   "Genel Hassasiyet" kaydiricisini SOLA alin (daha toleransli).
+   Hatalari kacirdigini dusunuyorsaniz SAGA alin (daha siki).
+
+----------------------------------------------------------
+NOTLAR
+----------------------------------------------------------
+ - Isik ne kadar sabit olursa sonuc o kadar guvenilir olur.
+ - Kaydettiginiz profiller su klasorde tutulur:
+      C:\Users\<kullanici>\AppData\Local\VeriMark\profiles
+ - Sorun olursa programi kapatip yeniden acin.

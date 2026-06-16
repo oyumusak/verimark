@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller ciktilari
+build/
+dist/
+*.spec.bak
+
+# Kullanici verileri (egitilmis profiller makinede uretilir)
+profiles/
+
+# Isletim sistemi
+.DS_Store
+Thumbs.db
